@@ -2,22 +2,20 @@
 class Assets {
   Assets._();
 
-  static const String assetsImagesMaskgroup = 'assets/images/Mask group.svg';
-  static const String fontsMontserratRegular = 'assets/fonts/Montserrat-Regular.ttf';
-  static const String imagesBalance = 'assets/images/Balance.svg';
-  static const String imagesDashboard = 'assets/images/Dashboard.svg';
-  static const String imagesExpenses = 'assets/images/Expenses.svg';
-  static const String imagesFrame = 'assets/images/Frame.svg';
-  static const String imagesFrame1 = 'assets/images/Frame (1).svg';
-  static const String imagesFrame2 = 'assets/images/Frame (2).svg';
-  static const String imagesGallery = 'assets/images/gallery.svg';
-  static const String imagesIncome = 'assets/images/Income.svg';
-  static const String imagesLogoutaccount = 'assets/images/Logout account.svg';
-  static const String imagesMaskgroup = 'assets/images/Mask group.png';
-  static const String imagesMyInvestments = 'assets/images/My Investments.svg';
-  static const String imagesMyTransaction = 'assets/images/My Transaction.svg';
-  static const String imagesSettingsystem = 'assets/images/Setting system.svg';
-  static const String imagesStatistics = 'assets/images/Statistics.svg';
-  static const String imagesWalletAccount = 'assets/images/Wallet Account.svg';
-
+  static const String montserratRegular = 'assets/fonts/Montserrat-Regular.ttf';
+  static const String balance = 'assets/images/Balance.svg';
+  static const String dashboard = 'assets/images/Dashboard.svg';
+  static const String expenses = 'assets/images/Expenses.svg';
+  static const String frame = 'assets/images/Frame.svg';
+  static const String frame1 = 'assets/images/Frame (1).svg';
+  static const String frame2 = 'assets/images/Frame (2).svg';
+  static const String gallery = 'assets/images/gallery.svg';
+  static const String income = 'assets/images/Income.svg';
+  static const String logoutAccount = 'assets/images/Logout account.svg';
+  static const String maskGroup = 'assets/images/Mask group.png';
+  static const String myInvestments = 'assets/images/My Investments.svg';
+  static const String myTransaction = 'assets/images/My Transaction.svg';
+  static const String setting = 'assets/images/Setting system.svg';
+  static const String statistics = 'assets/images/Statistics.svg';
+  static const String walletAccount = 'assets/images/Wallet Account.svg';
 }

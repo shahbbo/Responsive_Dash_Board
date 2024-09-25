@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 
 class AdaptiveLayout extends StatelessWidget {
-  AdaptiveLayout({
+  const AdaptiveLayout({
     super.key, required this.mobileLayout, required this.tabletLayout, required this.desktoplayout,
   });
 
-  WidgetBuilder mobileLayout, tabletLayout, desktoplayout;
+  final WidgetBuilder mobileLayout, tabletLayout, desktoplayout;
   @override
   Widget build(BuildContext context) {
     return Padding(
