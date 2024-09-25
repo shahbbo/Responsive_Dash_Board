@@ -9,7 +9,6 @@ class AllExpensesHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        FittedBox(child: Text('All Expenses', style: TextStyles.semiBold20(context))),
         const Spacer(),
         const MYDropDowm(),
       ],

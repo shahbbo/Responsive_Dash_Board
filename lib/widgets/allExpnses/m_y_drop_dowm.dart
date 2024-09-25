@@ -5,12 +5,10 @@ class MYDropDowm extends StatefulWidget {
   const MYDropDowm({super.key});
 
   @override
-  MYDropDowmState createState() => MYDropDowmState();
 }
 
 String option = 'Monthly';
 
-class MYDropDowmState extends State<MYDropDowm> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -55,7 +53,6 @@ class MYDropDowmState extends State<MYDropDowm> {
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.calendar_month, color: Color(0xFF064060)),
                   const SizedBox(width: 10),
                   Text(
                     value,
