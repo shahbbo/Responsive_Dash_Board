@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:responsive_dashboard/models/all_expenses_item_header.dart';
+
 
 class AllExpensesItemHeader extends StatelessWidget {
   const AllExpensesItemHeader(
       {super.key,
-      required this.allExpenseItemHeaderModel,
       required this.colorContainer,
       required this.colorIcon,
-      required this.colorIcon2});
+      required this.colorIcon2,
+      required this.image});
 
-  final AllExpenseItemHeaderModel allExpenseItemHeaderModel;
+  final String image;
   final Color colorContainer, colorIcon, colorIcon2;
 
   @override
@@ -29,14 +29,11 @@ class AllExpensesItemHeader extends StatelessWidget {
                         ),
                         child: Center(
                           child: SvgPicture.asset(
-                            allExpenseItemHeaderModel.image,
-                            colorFilter:
-                                ColorFilter.mode(colorIcon, BlendMode.srcIn),
+                            image,
+                            colorFilter: ColorFilter.mode(colorIcon, BlendMode.srcIn),
                           ),
                         ))))),
         const Expanded(child: SizedBox()),
-        Icon(Icons.arrow_forward_ios, color: colorIcon2),
-      ],
-    );
+        Icon(Icons.arrow_forward_ios, color: colorIcon2),],);
   }
 }
