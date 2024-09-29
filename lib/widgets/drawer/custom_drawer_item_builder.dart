@@ -21,6 +21,7 @@ class _CustomDrawerItemBuilderState extends State<CustomDrawerItemBuilder> {
     DrawerListModel(image: Assets.statistics, title: 'Statistics'),
     DrawerListModel(image: Assets.walletAccount, title: 'Wallet Account'),
     DrawerListModel(image: Assets.myInvestments, title: 'My Investments'),
+    DrawerListModel(image: Assets.setting, title: 'Setting'),
   ];
   int selectedIndex = 0;
 

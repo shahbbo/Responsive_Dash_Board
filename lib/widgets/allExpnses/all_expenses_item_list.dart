@@ -36,58 +36,57 @@ class _AllExpenseItemListViewState extends State<AllExpenseItemListView> {
 
   @override
   Widget build(BuildContext context) {
-    // return Row(
-    //   children: [
-    //     Expanded(
-    //       child: GestureDetector(
-    //         onTap: () {
-    //           setState(() {
-    //             selectedIndex = 0;
-    //           });
-    //         },
-    //         child: AllExpenseItem(
-    //           selected: selectedIndex == 0,
-    //           model: items[0],
-    //         ),
-    //       ),
-    //     ),
-    //     const SizedBox(
-    //       width: 8,
-    //     ),
-    //     Expanded(
-    //       child: GestureDetector(
-    //         onTap: () {
-    //           setState(() {
-    //             selectedIndex = 1;
-    //           });
-    //         },
-    //         child: AllExpenseItem(
-    //           selected: selectedIndex == 1,
-    //           model: items[1],
-    //         ),
-    //       ),
-    //     ),
-    //     const SizedBox(
-    //       width: 8,
-    //     ),
-    //     Expanded(
-    //       child: GestureDetector(
-    //         onTap: () {
-    //           setState(() {
-    //             selectedIndex = 2;
-    //           });
-    //         },
-    //         child: AllExpenseItem(
-    //           selected: selectedIndex == 2,
-    //           model: items[2],
-    //         ),
-    //       ),
-    //     ),
-    //   ],
-    // );
-
-
     return Row(
+      children: [
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              setState(() {
+                selectedIndex = 0;
+              });
+            },
+            child: AllExpenseItem(
+              selected: selectedIndex == 0,
+              model: items[0],
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 8,
+        ),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              setState(() {
+                selectedIndex = 1;
+              });
+            },
+            child: AllExpenseItem(
+              selected: selectedIndex == 1,
+              model: items[1],
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 8,
+        ),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              setState(() {
+                selectedIndex = 2;
+              });
+            },
+            child: AllExpenseItem(
+              selected: selectedIndex == 2,
+              model: items[2],
+            ),
+          ),
+        ),
+      ],
+    );
+
+    /*    return Row(
       children: items.asMap().entries.map((e) {
         int index = e.key;
         var item = e.value;
@@ -108,30 +107,36 @@ class _AllExpenseItemListViewState extends State<AllExpenseItemListView> {
           ),
         );
       }).toList(),
-    );
-
+    );*/
 
     // Size size = MediaQuery.of(context).size;
-    // return SliverList(
-    //   delegate: SliverChildBuilderDelegate(
-    //         (context, index) {
-    //       return Padding(
-    //         padding: const EdgeInsets.all(8.0),
-    //         child: GestureDetector(
+    //   return SizedBox(
+    //     // width: size.width*0.2,
+    //     height: 230,
+    //     child: ListView.builder(
+    //       itemCount: items.length,
+    //       scrollDirection: Axis.horizontal,
+    //       shrinkWrap: true,
+    //       physics: const AlwaysScrollableScrollPhysics(),
+    //       itemBuilder: (context, index) {
+    //         return GestureDetector(
     //           onTap: () {
     //             setState(() {
     //               selectedIndex = index;
     //             });
     //           },
-    //           child: AllExpenseItem(
-    //             model: items[index],
-    //             selected: selectedIndex == index,
+    //           child: Padding(
+    //             padding: const EdgeInsets.symmetric(horizontal:12),
+    //             child: IntrinsicWidth(
+    //               child: AllExpenseItem(
+    //                 selected: selectedIndex == index,
+    //                 model: items[index],
+    //               ),
+    //             ),
     //           ),
-    //         ),
-    //       );
-    //     },
-    //     childCount: items.length,
-    //   ),
-    // );
+    //         );
+    //       },
+    //     ),
+    //   );
   }
 }

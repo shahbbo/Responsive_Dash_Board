@@ -10,7 +10,7 @@ class QuickInvoice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomContainer(
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

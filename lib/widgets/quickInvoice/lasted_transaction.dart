@@ -11,11 +11,9 @@ class  LatestTransaction extends StatelessWidget {
     return  Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FittedBox(
-          child: Text(
-            'Latest Transaction',
-            style: TextStyles.medium16(context),
-          ),
+        Text(
+          'Latest Transaction',
+          style: TextStyles.medium16(context),
         ),
         const SizedBox(
           height: 12,

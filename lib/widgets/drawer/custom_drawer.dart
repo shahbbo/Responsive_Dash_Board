@@ -53,9 +53,6 @@ class CustomDrawer extends StatelessWidget {
                 const Spacer(),
                 InActiveDrawerItem(
                     drawerItemModel: DrawerListModel(
-                        title: 'Setting system', image: Assets.setting)),
-                InActiveDrawerItem(
-                    drawerItemModel: DrawerListModel(
                         title: 'Logout account', image: Assets.logoutAccount)),
                 const SizedBox(
                   height: 20,

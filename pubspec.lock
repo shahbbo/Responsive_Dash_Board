@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  awesome_card:
+    dependency: "direct main"
+    description:
+      name: awesome_card
+      sha256: "6455e99492b70c089b1b9d5a0da64e07f5bdd9cb51e5daaca5a1df340f2253d1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.7"
   boolean_selector:
     dependency: transitive
     description:
@@ -81,6 +89,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  dots_indicator:
+    dependency: "direct main"
+    description:
+      name: dots_indicator
+      sha256: "58b6a365744aa62aa1b70c4ea29e5106fbe064f5edaf7e9652e9b856edbfd9bb"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.0"
+  expandable_page_view:
+    dependency: "direct main"
+    description:
+      name: expandable_page_view
+      sha256: "210dc6961cfc29f7ed42867824eb699c9a4b9b198a7c04b8bdc1c05844969dc6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.17"
   fake_async:
     dependency: transitive
     description:
@@ -510,10 +534,10 @@ packages:
     dependency: transitive
     description:
       name: web
-      sha256: d43c1d6b787bf0afad444700ae7f4db8827f701bc61c255ac8d328c6f4d52062
+      sha256: cd3543bd5798f6ad290ea73d210f423502e71900302dde696f8bff84bf89a1cb
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.0"
+    version: "1.1.0"
   xdg_directories:
     dependency: transitive
     description:

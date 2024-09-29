@@ -6,7 +6,7 @@ import 'package:responsive_dashboard/widgets/drawer/user_info_list_tile.dart';
 class LatestTransactionListView extends StatelessWidget {
   const LatestTransactionListView({super.key});
 
-  static List<UserInfoModel> item = [
+  static List<UserInfoModel> items = [
     UserInfoModel(
         image: Assets.frame1,
         name: 'Madrani Andi',
@@ -26,17 +26,23 @@ class LatestTransactionListView extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
-        children: item.map((e) => IntrinsicWidth(child: UserInfoListTile(model: e,))).toList(),
+        children: items.map((e) => IntrinsicWidth(child: UserInfoListTile(model: e,))).toList(),
       ),
     ) ;
-    /*return ListView.builder(
-        shrinkWrap: true,
-        scrollDirection: Axis.horizontal,
-        itemCount: item.length,
-        itemBuilder: (context, index) {
-          return UserInfoListTile(
-            userInfoModel: item[index],
-          );
-        });*/
+    /*return SizedBox(
+      height: 75,
+      child: ListView.builder(
+          shrinkWrap: true,
+          scrollDirection: Axis.horizontal,
+          physics: const AlwaysScrollableScrollPhysics(),
+          itemCount: items.length,
+          itemBuilder: (context, index) {
+            return IntrinsicWidth(
+              child: UserInfoListTile(
+                model: items[index],
+              ),
+            );
+          }),
+    );*/
   }
 }

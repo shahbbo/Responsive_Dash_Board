@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/allExpnses/a_ll_expenses_item_list.dart';
+import 'package:responsive_dashboard/widgets/allExpnses/all_expenses_item_list.dart';
 import 'package:responsive_dashboard/widgets/allExpnses/all_expenses_header.dart';
+import 'package:responsive_dashboard/widgets/custom_container.dart';
 
 
 class ALlExpenses extends StatelessWidget {
@@ -8,21 +9,15 @@ class ALlExpenses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: ShapeDecoration(
-        color: Colors.white,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
+    return CustomContainer(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          children: [
+            AllExpensesHeader(title: 'All Expnses',),
+            const SizedBox(height: 16),
+            const AllExpenseItemListView(),
+          ],
         ),
-      ),
-      child: const Column(
-        children: [
-          AllExpensesHeader(),
-          SizedBox(height: 16),
-          AllExpenseItemListView(),
-        ],
-      ),
     );
   }
 }

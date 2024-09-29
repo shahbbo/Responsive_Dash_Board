@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/text_styles.dart';
 
-
 class TitleTextField extends StatelessWidget {
-  const TitleTextField({super.key, required this.title, required this.hit});
+  const TitleTextField({super.key, required this.title, required this.hint});
 
-  final String title, hit;
+  final String title, hint;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class TitleTextField extends StatelessWidget {
         ),
         TextField(
           decoration: InputDecoration(
-            hintText: hit,
+            hintText: hint,
             hintStyle: TextStyles.regular16(context).copyWith(
               color: const Color(0xFFAAAAAA),
             ),

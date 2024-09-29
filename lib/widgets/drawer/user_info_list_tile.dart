@@ -4,9 +4,10 @@ import 'package:responsive_dashboard/models/user_Info_model.dart';
 import 'package:responsive_dashboard/utils/text_styles.dart';
 
 class UserInfoListTile extends StatelessWidget {
-  const UserInfoListTile(
-      {super.key, required this.model,
-      });
+  const UserInfoListTile({
+    super.key,
+    required this.model,
+  });
 
   final UserInfoModel model;
 
@@ -16,20 +17,23 @@ class UserInfoListTile extends StatelessWidget {
       color: const Color(0xffFAFAFA),
       elevation: 0,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(7),
+        borderRadius: BorderRadius.circular(10),
       ),
-      child: ListTile(
-        leading: SvgPicture.asset(
-          model.image,
+      child: Center(
+        child: ListTile(
+          leading: SvgPicture.asset(
+            model.image,
+          ),
+          title: FittedBox(
+              alignment: AlignmentDirectional.centerStart,
+              fit: BoxFit.scaleDown,
+              child: Text(model.name, style: TextStyles.semiBold16(context))),
+          subtitle: FittedBox(
+              alignment: AlignmentDirectional.centerStart,
+              fit: BoxFit.scaleDown,
+              child: Text(model.email, style: TextStyles.regular12(context))),
+          // ),
         ),
-        title: FittedBox(
-            alignment: AlignmentDirectional.centerStart,
-            fit: BoxFit.scaleDown,
-            child: Text(model.name, style: TextStyles.semiBold16(context))),
-        subtitle: FittedBox(
-            alignment: AlignmentDirectional.centerStart,
-            fit: BoxFit.scaleDown,
-            child: Text(model.email, style: TextStyles.regular12(context))),
       ),
     );
   }

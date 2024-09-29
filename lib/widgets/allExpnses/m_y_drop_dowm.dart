@@ -47,16 +47,18 @@ class MYDropDowmState extends State<MYDropDowm> {
           return DropdownMenuItem<String>(
             value: value,
             child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 14),
+              padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.grey),
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const Icon(Icons.calendar_month, color: Colors.blue),
-                  const SizedBox(width: 10),
+                   const Icon(Icons.calendar_month, color: Colors.blue),
+                  // const SizedBox(width: 5),
                   Text(
                     value,
                     style: TextStyles.medium16(context),
@@ -72,8 +74,8 @@ class MYDropDowmState extends State<MYDropDowm> {
             return Row(
               children: [
                 Text(value),
-                const SizedBox(width: 9),
-                const Icon(null),
+                const SizedBox(width: 5),
+                // const Icon(null),
               ],
             );
           }).toList();

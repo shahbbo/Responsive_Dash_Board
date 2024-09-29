@@ -40,3 +40,50 @@ class AllExpensesItemHeader extends StatelessWidget {
     );
   }
 }
+
+
+/*
+class AllExpensesItemHeader extends StatelessWidget {
+  const AllExpensesItemHeader({
+    super.key,
+    required this.allExpenseItemHeaderModel,
+    required this.colorContainer,
+    required this.colorIcon,
+    required this.colorIcon2,
+  });
+
+  final AllExpenseItemHeaderModel allExpenseItemHeaderModel;
+  final Color colorContainer, colorIcon, colorIcon2;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Container(
+                decoration: ShapeDecoration(
+                  color: colorContainer,
+                  shape: const OvalBorder(),
+                ),
+                child: Center(
+                  child: SvgPicture.asset(
+                    allExpenseItemHeaderModel.image,
+                    colorFilter: ColorFilter.mode(colorIcon, BlendMode.srcIn),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+        // يمكن استبدال Expanded بـ SizedBox أو Flexible بدون استخدامه
+        const SizedBox(width: 10), // تعديل المسافة حسب الحاجة
+        Icon(Icons.arrow_forward_ios, color: colorIcon2),
+      ],
+    );
+  }
+}
+*/
