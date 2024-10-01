@@ -14,11 +14,10 @@ class MYDropDowmState extends State<MYDropDowm> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        border: Border.all(color: const Color(0xFF064060),
-        width: 2),
+        border: Border.all(color: const Color(0xFF064060), width: 1.3),
       ),
       child: DropdownButton<String>(
         value: option,
@@ -29,19 +28,18 @@ class MYDropDowmState extends State<MYDropDowm> {
         icon: Transform.rotate(
             angle: -1.5707,
             child:
-                const Icon(Icons.arrow_back_ios_new,
-                    color: Color(0xFF064060))),
-        iconSize: 24,
+                const Icon(Icons.arrow_back_ios_new, color: Color(0xFF064060))),
+        iconSize: 20,
         underline: Container(
           height: 0,
           color: Colors.white,
         ),
         alignment: Alignment.topCenter,
         onChanged: (String? newValue) {
-        setState(() {
-          option = newValue!;
-        });
-      },
+          setState(() {
+            option = newValue!;
+          });
+        },
         items: <String>['Monthly', 'Yearly', 'Weekly', 'Daily']
             .map<DropdownMenuItem<String>>((String value) {
           return DropdownMenuItem<String>(
@@ -57,7 +55,7 @@ class MYDropDowmState extends State<MYDropDowm> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                   const Icon(Icons.calendar_month, color: Colors.blue),
+                  const Icon(Icons.calendar_month, color: Colors.blue),
                   // const SizedBox(width: 5),
                   Text(
                     value,
@@ -71,12 +69,14 @@ class MYDropDowmState extends State<MYDropDowm> {
         selectedItemBuilder: (BuildContext context) {
           return <String>['Monthly', 'Yearly', 'Weekly', 'Daily']
               .map<Widget>((String value) {
-            return Row(
-              children: [
-                Text(value),
-                const SizedBox(width: 5),
-                // const Icon(null),
-              ],
+            return IntrinsicWidth(
+              child: Row(
+                children: [
+                  Text(value, style: TextStyles.medium16(context)),
+                  const SizedBox(width: 8),
+                  // const Icon(null),
+                ],
+              ),
             );
           }).toList();
         },
@@ -84,7 +84,6 @@ class MYDropDowmState extends State<MYDropDowm> {
     );
   }
 }
-
 /*
 import 'package:flutter/material.dart';
 

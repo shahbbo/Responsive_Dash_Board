@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/utils/size_config.dart';
 
 abstract class TextStyles {
   static TextStyle regular16(context) {
@@ -107,11 +108,11 @@ double getScaleFactor(BuildContext context) {
   var devicePixelRation = dispatcher.views.first.devicePixelRatio;
  double width = physicalWidth / devicePixelRation ;*/
   double width = MediaQuery.sizeOf(context).width;
-  if (width < 1320) {
+  if (width < SizeConfig.tablet){
     return width / 550;
-  } else if (width < 900) {
+  } else if (width < SizeConfig.desktop){
     return width / 1000;
   } else {
-    return width / 1600;
+    return width / 1920;
   }
 }

@@ -3,7 +3,7 @@ import 'package:responsive_dashboard/utils/text_styles.dart';
 import 'package:responsive_dashboard/widgets/allExpnses/m_y_drop_dowm.dart';
 
 class AllExpensesHeader extends StatelessWidget {
-   AllExpensesHeader({super.key,required this.title});
+   const AllExpensesHeader({super.key,required this.title});
 
   final String title;
   @override

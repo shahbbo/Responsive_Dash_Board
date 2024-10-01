@@ -5,9 +5,7 @@ import 'package:responsive_dashboard/views/dashboard_view.dart';
 
 void main() {
   runApp(DevicePreview(
-    enabled: !kReleaseMode,
-    builder: (context) => const MyApp()));
-  }
+      enabled: !kReleaseMode, builder: (context) => const MyApp()));}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -24,9 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const DashboardView(),
+      home: DashboardView(),
     );
   }
 }
-
-

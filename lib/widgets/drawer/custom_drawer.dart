@@ -45,11 +45,6 @@ class CustomDrawer extends StatelessWidget {
             hasScrollBody: false,
             child: Column(
               children: [
-                // const Expanded(
-                //   child: SizedBox(
-                //     height: 20,
-                //   ),
-                // ),
                 const Spacer(),
                 InActiveDrawerItem(
                     drawerItemModel: DrawerListModel(

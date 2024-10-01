@@ -41,6 +41,7 @@ dependencies:
   awesome_card: ^1.1.7
   dots_indicator: ^3.0.0
   expandable_page_view: ^1.0.17
+  fl_chart: ^0.69.0
 
 dev_dependencies:
   flutter_test:

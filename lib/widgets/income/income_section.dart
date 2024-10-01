@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/widgets/custom_container.dart';
 import 'package:responsive_dashboard/widgets/allExpnses/all_expenses_header.dart';
+import 'package:responsive_dashboard/widgets/income/income_section_body.dart';
 
 
 class IncomeSection extends StatelessWidget {
@@ -8,20 +9,18 @@ class IncomeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomContainer(
-        padding: const EdgeInsets.all(20),
+    return const CustomContainer(
+        padding: EdgeInsets.all(20),
         child: Column(
           children: [
             AllExpensesHeader(
               title: 'Income',
             ),
-            const SizedBox(
+            SizedBox(
               height: 16,
             ),
-            // IncomeSectionBody(),
+            IncomeSectionBody(),
           ],
         ));
   }
 }
-
-

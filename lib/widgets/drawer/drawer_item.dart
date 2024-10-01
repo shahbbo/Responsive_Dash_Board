@@ -46,13 +46,9 @@ class ActiveDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(drawerItemModel.image),
-      title: FittedBox(
-        alignment: AlignmentDirectional.centerStart,
-        fit: BoxFit.scaleDown,
-        child: Text(
-          drawerItemModel.title,
-          style: TextStyles.bold16(context),
-        ),
+      title: Text(
+        drawerItemModel.title,
+        style: TextStyles.bold16(context),
       ),
       trailing: Container(
         width: 3.27,
