@@ -101,7 +101,6 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
   double upperLimit = fontSize * 1.2;
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
 }
-
 double getScaleFactor(BuildContext context) {
 /*  var dispatcher = PlatformDispatcher.instance ;
   var physicalWidth = dispatcher.views.first.physicalSize.width;

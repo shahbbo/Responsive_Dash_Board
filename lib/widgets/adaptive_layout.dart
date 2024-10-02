@@ -13,7 +13,7 @@ class AdaptiveLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     log(MediaQuery.sizeOf(context).width.toString());
     return Padding(
-        padding: const EdgeInsets.all(0.0),
+        padding: const EdgeInsets.all(8.0),
         child: LayoutBuilder(builder: (context, constraints) {
           if (constraints.maxWidth < 900) {
             return  mobileLayout(context);

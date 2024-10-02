@@ -14,9 +14,13 @@ class TransactionItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       child: ListTile(
-        title: Text(
-          transactionModel.title,
-          style:TextStyles.semiBold16(context),
+        title: FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: AlignmentDirectional.centerStart,
+          child: Text(
+            transactionModel.title,
+            style:TextStyles.semiBold16(context),
+          ),
         ),
         subtitle: Text(
           transactionModel.date,
